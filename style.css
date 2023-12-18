@@ -18,9 +18,6 @@ a{
 .main-content{
     grid-column: 2/3;
 }
-.sidebar-right{
-    grid-column: 3/4;
-}
 /*
     SIDEBAR LEFT
  */
@@ -94,10 +91,18 @@ a{
     CARD
 */
 .card{
-    border: 1px solid black;
     width:300px;
     border-radius: 10px;
-    box-shadow: -5px 5px 10px rgba(0,0,0,0.2);
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 15px;
+}
+.info h3{
+    margin-bottom: -10px;
+}
+.social{
+    float: right;
 }
 /* 
     MAIN CONTENT
@@ -107,7 +112,13 @@ a{
 }
 .cards-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
     gap: 20px;
-    justify-items: center;
+}
+
+/* 
+    SIDEBAR RIGHT
+*/
+.sidebar-right{
+    padding: 20px;
 }
